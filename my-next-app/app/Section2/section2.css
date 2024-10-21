@@ -1,0 +1,79 @@
+.section2 {
+  background-color: #947244;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 .haqqinda {
+  background-color: #3C3B3B;
+  width: 45%;
+  height: auto;
+  z-index: 999;
+  position: absolute;
+  left: 5%;
+  top: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 0.5s ease-out;
+  border-radius: 10%;
+}
+.section2 .haqqinda.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+.section2 .haqqinda .haqqimizda {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.section2 .haqqinda .haqqimizda h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+}
+.section2 .haqqinda .haqqimizda h2 {
+  color: white;
+  font-size: 30px;
+}
+.section2 .haqqinda .haqqimizda ul li {
+  color: white;
+  display: flex;
+  font-size: 22px;
+}
+.section2 .haqqinda .haqqimizda ul li p {
+  font-weight: 1000;
+}
+.section2 .haqqinda .haqqimizda ul li li::before {
+  color: white;
+  content: ".";
+}
+.section2 .image {
+  background-image: url("../Images/ofis.png");
+  width: 70%;
+  height: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 0.5s ease-out;
+}
+.section2 .image.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .section2 {
+    display: none;
+  }
+}/*# sourceMappingURL=section2.css.map */

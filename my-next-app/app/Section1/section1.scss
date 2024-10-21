@@ -1,0 +1,55 @@
+.section1 {
+    height: 100vh;
+    background-image: url("../Images/bg.gif");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    .overlay {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        padding: 19px 22px;
+        border-radius: 25px;
+        background: rgba(8, 5, 5, 0.3);
+        width: 50%;
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .section1 {
+        height: 100vh;
+        background-image: url("../Images/bg.gif");
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+
+        .overlay {
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            border-radius: 25px;
+            background: rgba(8, 5, 5, 0.3);
+            width: 50%;
+            height: 16% auto;
+
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.section3 {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  background-color: #000000;
+  justify-content: center;
+}
+.section3 h1 {
+  color: white;
+  font-size: 4vw;
+  margin-top: 2%;
+}
+
+@media (max-width: 1400px) {
+  .section3 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Section3.css.map */

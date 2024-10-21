@@ -1,0 +1,183 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .navbar-logo {
+        .logo-img {
+            font-size: 100px;
+        }
+    }
+
+    .navbar-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+
+        li {
+            display: block;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 16px 20px;
+                font-weight: 500;
+                position: relative;
+                transition: all 0.4s ease-in;
+                font-size: 25px;
+
+                &:hover {
+                    color: #FCA61F;
+                    text-decoration: underline;
+                    text-decoration-color: #FCA61F;
+                    text-underline-offset: 25px;
+                    text-decoration-thickness: 2px;
+                }
+
+                &.active {
+                    color: #FCA61F;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -5px;
+                        height: 2px;
+                        background-color: #FCA61F;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-language {
+        .menu {
+            display: none;
+        }
+
+        button {
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            border: 1px solid #FCA61F;
+            cursor: pointer;
+            width: 130px;
+            height: 50px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .globe {
+                color: white;
+            }
+
+            &:hover {
+                background-color: #FCA61F;
+            }
+        }
+    }
+}
+
+// Tablet ve Mobil Cihazlar için Responsive Ayarlar
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: row;
+        /* Dikey düzen için */
+        height: auto;
+        /* Otomatik yükseklik */
+        top: 0;
+        /* Üstten sıfırladık */
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .navbar-logo {
+            .logo-img {
+                font-size: 80px;
+                /* Logo boyutunu küçülttük */
+            }
+        }
+
+        .navbar-links {
+            a.active {
+                text-decoration: none;
+
+                &::after {
+                    display: none;
+                    /* Alt çizgiyi gizler */
+                }
+            }
+
+
+
+            /* Menü mobilde varsayılan olarak gizli */
+            display: none;
+            position: absolute;
+            top: 100%;
+            /* Menü butonun altında */
+            right: 2%;
+            width: 20% auto;
+            /* Tam genişlik */
+            background-color: gray;
+            flex-direction: column;
+            /* Dikey liste */
+            z-index: 999;
+            /* Üstte göster */
+
+            li {
+                width: 100%;
+                /* Elemanlar tam genişlikte */
+                text-align: center;
+                /* Ortalanmış */
+
+                a {
+                    font-size: 20px;
+                    /* Mobilde font küçültüldü */
+                    padding: 10px;
+
+                }
+            }
+        }
+
+        .navbar-language {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: block;
+                /* Menü ikonu gösterildi */
+                cursor: pointer;
+                font-size: 20px;
+                background-color: rgba(217, 217, 217, 0.3);
+                color: white;
+                margin-left: 20px;
+            }
+
+            button {
+                font-size: 20px;
+                /* Buton boyutunu küçülttük */
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.navbar-links {
+    display: none; // Menü varsayılan olarak gizli
+
+    &.show {
+        display: flex; // Menü görünür olduğunda gösterilir
+        flex-direction: column; // Mobilde dikey görünüm
+    }
+}

@@ -5,9 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 
     .haqqinda {
-        background-color: #3C3B3B;
+        background-color: #3c3b3b;
         width: 45%;
         height: auto;
         z-index: 999;
@@ -18,7 +19,6 @@
         opacity: 0;
         transition: transform 1s ease-out, opacity 0.5s ease-out;
         border-radius: 10%;
-
 
         &.slide-in {
             transform: translateX(0);
@@ -36,26 +36,24 @@
 
             h1 {
                 color: white;
-                font-size: 70px;
+                font-size: 3.5vw;
                 font-weight: 600;
             }
 
             h2 {
                 color: white;
-                font-size: 30px;
+                font-size: 1.5vw;
+                margin-bottom: 3%;
             }
 
             ul {
                 li {
                     color: white;
                     display: flex;
-                    font-size: 22px;
+                    font-size: 1.3vw;
+                    margin-bottom: 3%;
 
-                    p {
-                        font-weight: 1000;
-                    }
-
-                    li::before {
+                    &::before {
                         color: white;
                         content: ".";
                     }
@@ -65,7 +63,7 @@
     }
 
     .image {
-        background-image: url("../Images/ofis.png");
+        background-image: url("../public/Images/ofis.png");
         width: 70%;
         height: 95%;
         background-repeat: no-repeat;
@@ -78,16 +76,83 @@
         opacity: 0;
         transition: transform 1s ease-out, opacity 0.5s ease-out;
 
-
         &.slide-in {
             transform: translateX(0);
             opacity: 1;
         }
     }
-}
 
-@media (max-width: 1200px) {
-    .section2 {
-        display: none;
+    // Tablet için düzenlemeler
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        height: auto;
+
+        .haqqinda {
+            width: 90%;
+            position: relative;
+            left: 0;
+            transform: translateY(-100%);
+            border-radius: 0;
+
+            .haqqimizda {
+                h1 {
+                    font-size: 6vw;
+                }
+
+                h2 {
+                    font-size: 3vw;
+                }
+
+                ul li {
+                    font-size: 2.5vw;
+                }
+            }
+        }
+
+        .image {
+            width: 90%;
+            height: 60vh;
+            position: relative;
+            right: 0;
+            transform: translateY(100%);
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    // Mobil için düzenlemeler
+    @media (max-width: 768px) {
+        height: auto;
+
+        .haqqinda {
+            width: 100%;
+            left: 0;
+
+            .haqqimizda {
+                h1 {
+                    font-size: 8vw;
+                }
+
+                h2 {
+                    font-size: 4vw;
+                }
+
+                ul li {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        .image {
+            width: 100%;
+            height: 50vh;
+            transform: translateY(50%);
+            background-size: cover;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse; // Image divini haqqinda divinin üstüne alır
+        align-items: flex-start;
     }
 }

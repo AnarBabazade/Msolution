@@ -36,12 +36,12 @@ function Section2() {
             <div className={`haqqinda ${isVisible ? "slide-in" : ""}`}>
                 <div className="haqqimizda">
                     <h1>Haqqimizda</h1>
-                    <h2>MSolution-a xoş gəlmisiniz: İnnovasiya <br /> Mükəmməlliklə  Qarşılanır</h2>
+                    <h2>MSolution-a xoş gəlmisiniz: İnnovasiya  Mükəmməlliklə <br /> Qarşılanır</h2>
                     <ul>
-                        <li> <p>Çətinlikdən inkişafa:</p> Biz biznes problemlərini inkişaf <br /> imkanlarına çevirməkdə sizin əsas tərəfdaşınızıq.</li>
-                        <li> <p>Vahid yanaşma:</p> Bizim hərtərəfli yanaşmamız <br /> əməliyyatları sadələşdirməkdən rəqəmsal<br /> mənzərənizi dəyişməyə qədər hər şeyi əhatə edir.</li>
-                        <li> <p>Mükəmməl həllər:</p> Biz sizin biznesinizi ən qabaqcıl <br /> həllər ilə təchiz edərək qüsursuz inteqrasiya və <br /> səmərəliliyi təmin edirik.</li>
-                        <li> <p>Uğura gedən yol</p> MSolution-da, biz sadəcə xidmət <br /> göstərmirik; uğur hekayələri yaradırıq.</li>
+                        <li> Çətinlikdən inkişafa: Biz biznes problemlərini inkişaf <br /> imkanlarına çevirməkdə sizin əsas tərəfdaşınızıq.</li>
+                        <li> Vahid yanaşma: Bizim hərtərəfli yanaşmamız <br /> əməliyyatları sadələşdirməkdən rəqəmsal<br /> mənzərənizi dəyişməyə qədər hər şeyi əhatə edir.</li>
+                        <li> Mükəmməl həllər: Biz sizin biznesinizi ən qabaqcıl <br /> həllər ilə təchiz edərək qüsursuz inteqrasiya və <br /> səmərəliliyi təmin edirik.</li>
+                        <li> Uğura gedən yol: MSolution-da, biz sadəcə xidmət <br /> göstərmirik; uğur hekayələri yaradırıq.</li>
                     </ul>
                 </div>
             </div>

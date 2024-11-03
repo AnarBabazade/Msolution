@@ -1,0 +1,90 @@
+.footerwall {
+    background-image: url("../public/Images/footer.png");
+
+
+    .footer {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url("../public/Images/footer.png");
+        flex-wrap: wrap;
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+            width: 33.3%;
+            height: 60%;
+
+            h2 {
+                color: white;
+                font-size: 2vw;
+            }
+
+            .sosialicons {
+                display: flex;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+            width: 33.3%;
+            height: 80%;
+
+            h2 {
+                color: white;
+                font-size: 2vw;
+            }
+
+            a {
+                color: white;
+                font-size: 2vw;
+            }
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+            width: 33.3%;
+            height: 60%;
+
+            h2 {
+                color: white;
+                font-size: 2vw;
+            }
+
+            a {
+                color: white;
+                font-size: 2vw;
+            }
+        }
+
+
+    }
+
+    .end {
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            color: white;
+            font-size: 1.5vw;
+        }
+
+        a {
+            color: white;
+            font-size: 1.5vw;
+        }
+    }
+
+}

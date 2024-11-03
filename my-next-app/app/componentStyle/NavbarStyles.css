@@ -75,7 +75,7 @@
   background-color: #FCA61F;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .navbar {
     flex-direction: row;
     /* Dikey düzen için */

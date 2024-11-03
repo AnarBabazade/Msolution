@@ -1,0 +1,73 @@
+.footerwall {
+  background-image: url("../public/Images/footer.png");
+}
+.footerwall .footer {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("../public/Images/footer.png");
+  flex-wrap: wrap;
+}
+.footerwall .footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 33.3%;
+  height: 60%;
+}
+.footerwall .footer .social h2 {
+  color: white;
+  font-size: 2vw;
+}
+.footerwall .footer .social .sosialicons {
+  display: flex;
+}
+.footerwall .footer .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 33.3%;
+  height: 80%;
+}
+.footerwall .footer .menu h2 {
+  color: white;
+  font-size: 2vw;
+}
+.footerwall .footer .menu a {
+  color: white;
+  font-size: 2vw;
+}
+.footerwall .footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 33.3%;
+  height: 60%;
+}
+.footerwall .footer .contact h2 {
+  color: white;
+  font-size: 2vw;
+}
+.footerwall .footer .contact a {
+  color: white;
+  font-size: 2vw;
+}
+.footerwall .end {
+  display: flex;
+  justify-content: space-around;
+}
+.footerwall .end p {
+  color: white;
+  font-size: 1.5vw;
+}
+.footerwall .end a {
+  color: white;
+  font-size: 1.5vw;
+}/*# sourceMappingURL=footer.css.map */

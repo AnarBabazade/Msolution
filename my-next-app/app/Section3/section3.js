@@ -1,12 +1,17 @@
+"use client";
 import React from 'react';
+import MySwiper from '../components/SwipperSlide';
+import ErrorBoundary from '../components/ErrorBoundary';
 import "../Section3/Section3.scss";
-import SwiperComponent from "../componentStyle/SwipperSlide";
 
 function Section3() {
     return (
-        <div className='section3'>
+        <div id='section3' className='section3'>
             <h1>Xidmətlərimiz</h1>
-            <SwiperComponent />
+            <ErrorBoundary>
+                <MySwiper />
+            </ErrorBoundary>
+
         </div>
     );
 }
